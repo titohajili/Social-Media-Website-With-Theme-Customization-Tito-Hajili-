@@ -70,4 +70,45 @@ img{
     background: var(--primary);
     color: white;
 }
+.tex-bold{
+    font-weight: 500;
+}
+.tex-mutd{
+    color: var(--gray);
+}
+
+nav{
+    width: 100%;
+    background: var(--white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .search-bar{
+    background: var(--light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+nav .search-bar input[type="search"]{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+nav .search-bar input[type="search"]::placeholder{
+    color: var(--gray);
+}
+nav .create{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 
