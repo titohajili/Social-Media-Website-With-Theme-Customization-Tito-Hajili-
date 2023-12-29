@@ -291,4 +291,39 @@ main .container .left .profile{
  .middle .stories .story:nth-child(6){
     background: url(./images/story-6.jpg) no-repeat center center/cover;
  }
- 
+ .middle .story .profile-pic{
+    width: 2rem;
+    height: 2rem;
+    align-self:flex-start;
+    border: 3px solid var(--primary);
+ }
+
+ /*  crete post */
+ .middle .create-post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+ }
+ .middle .create-post input[type='text']{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--dark);
+    margin-right: 1rem;
+ }
+
+ /* ===feeds=========== */
+ .middle .feeds .feed{
+    background: var(--white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+ }
