@@ -12,6 +12,7 @@
     const themeModal =document.querySelector('.customize-theme');
     const fontSizes = document.querySelectorAll('.choose-size span');
     var root = document.querySelector(':root');
+    const colorPalette = document.querySelectorAll('.chose-color span');
 
 
 //===================SIDEBAR ==
@@ -105,7 +106,7 @@ fontSizes.forEach(size => {
     removeSizeSelector();
     let fontSize;
     size.classList.toggle('active');
-    
+
     if(size.classList.contains('font-size-1')){
         fontSize = '10px';
         root.style.setProperty('--top-lef', '5.4rem');
@@ -132,4 +133,26 @@ fontSizes.forEach(size => {
     document.querySelector('html').style.fontSize = fontSize;
 
    })
+})
+
+//change primary colors
+
+colorPalette.forEach(color => {
+    color.addEventListener('click', () => {
+        let primary;
+
+        if(color.classList.contains('color-1')){
+            primaryHue = 252;
+        } else if(color.classList.contains('color-2')){
+            primaryHue = 52;
+        } else if(color.classList.contains('color-3')){
+            primaryHue = 352;
+        } else if(color.classList.contains('color-4')){
+            primaryHue = 152;
+        } else if(color.classList.contains('color-5')){
+            primaryHue = 202;
+        }
+        color.classList.add('active');
+        root.style.setProperty('--primary-color-hue', primaryHue);
+    })
 })
