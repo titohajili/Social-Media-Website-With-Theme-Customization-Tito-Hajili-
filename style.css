@@ -488,6 +488,7 @@ main .container .left .profile{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--primary);
 
  }
  /* ----FONT SIZE------- */
@@ -628,6 +629,9 @@ main .container .left .profile{
    .left .btn{
       display: none;
    }
+   .customize-theme .card{
+      width: 80vw;
+   }
 }
 /* media queries for small tablets and mobile phones */
 
@@ -661,5 +665,8 @@ main .container .left .profile{
    }
    main .container .right{
       display: none;
+   }
+   .customize-theme .card{
+      width: 92vw;
    }
 }
