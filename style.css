@@ -4,14 +4,19 @@
 
 :root{
    --primary-color-hue: 252;
-    --white:hsl(252, 30%, 100%);
-    --light:hsl(252, 30%, 95%);
+   --dark-color-lightness:17%;
+   --light-color-lightness:95%;
+   --white-collor-lightness:100%;
+
+
+    --white:hsl(252, 30%, var(--white-collor-lightness));
+    --light:hsl(252, 30%, var(--light-color-lightness));
     --gray:hsl(252, 15%, 65%);
     --primary:hsl( var(--primary-color-hue),  75%, 60%);
     --secondary:hsl(252, 100%, 90%);
     --success:hsl(120, 95%, 65%);
     --danger:hsl(0, 95%, 65%);
-    --dark:hsl(252, 30%, 17%);
+    --dark:hsl(252, 30%, var(--dark-color-lightness));
     --black:hsl(252, 30%, 10%);
 
     --border-radius:2rem;
@@ -472,7 +477,7 @@ main .container .left .profile{
  /* THEME CUSTOMIZATION */
  .customize-theme{
     background: rgba(255, 255, 255, 0.5);
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
